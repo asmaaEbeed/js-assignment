@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>JS Assignment</h1>
+    </header>
+
+    <!-- Question 1 -->
+    <section width="75%">
+      <img src="images/img-1.jpg" alt="Question1" width="75%" />
+      <article>
+        <div class="steps">Steps:</div>
+        <p>let x = 5, y = 7;</p>
+        <p>let a = x<sup>2</sup> + y<sup>2</sup></p>
+        <p class="err">a = ??</p>
+        <p>b = a<sup>2</sup> + xy</p>
+        <p>c = (a + b)<sup>2</sup></p>
+        <button onclick="solve1()">Solve</button>
+        <p id="result1" class="bg-success-soft"></p>
+      </article>
+    </section>
+
+    <!-- Question 2 -->
+    <section width="75%">
+      <img src="images/img-2.jpg" alt="Question1" width="75%" />
+      <article>
+        <div class="steps">Steps:</div>
+        <div>
+          <label for="num1"
+            >Please enter number to determine if even or odd
+          </label>
+          <input type="number" id="num1" class="" />
+        </div>
+        <p id="err-msg"></p>
+
+        <button onclick="solve2()">Check value</button>
+        <p id="result2" class="bg-success-soft"></p>
+      </article>
+    </section>
+
+    <!-- Question 3 -->
+    <section width="75%">
+      <img src="images/img-3.jpg" alt="Question3" width="75%" />
+      <article>
+        <div class="steps">Steps:</div>
+        <div class="d-flex">
+          <div>
+            <label for="num2">Please enter <b>A</b> Value </label>
+            <input type="number" id="num2" class="" />
+          </div>
+          <div>
+            <label for="num3">Please enter <b>B</b> value </label>
+            <input type="number" id="num3" class="" />
+          </div>
+        </div>
+        <button onclick="solve3()">Check value</button>
+        <p id="result3" class="bg-success-soft"></p>
+      </article>
+    </section>
+
+    <!-- Question 4 -->
+    <section width="75%">
+      <img src="images/img-4.jpg" alt="Question4" width="75%" />
+      <article>
+        <div class="steps">Steps:</div>
+        <div class="d-flex card">
+          <p class="w-33">Z = 2, K = 1</p>
+          <button class="w-33" onclick="solve4()">Z Value equal to</button>
+          <p id="result4" class="success w-33 px-20 bg-success-soft"></p>
+        </div>
+        <div class="d-flex card">
+          <p class="w-33">z = 2k<sup>3</sup> - 3, K = 2</p>
+          <button class="w-33" onclick="solve5()">Z Value equal to</button>
+          <p id="result5" class="success w-33 px-20 bg-success-soft"></p>
+        </div>
+        <div class="d-flex card">
+          <p class="w-33">z = -2, K = 3</p>
+          <button class="w-33" onclick="solve6()">Z Value equal to</button>
+          <p id="result6" class="success w-33 px-20 bg-success-soft"></p>
+        </div>
+        <div class="d-flex card">
+          <p class="w-33">
+            Z = K
+            <span class="d-block">K < 1 or K > 3</span>
+            <button class="light-btn" onClick="generateRandom()">
+              Generate
+            </button>
+            <span id="random"></span>
+          </p>
+          <button class="w-33" onclick="solve7()">Z Value equal to</button>
+          <p id="result7" class="success w-33 px-20 bg-success-soft"></p>
+        </div>
+      </article>
+    </section>
+    <!-- Question 5 -->
+    <section width="75%">
+        <img src="images/img-5.jpg" alt="Question5" width="75%" />
+        <article>
+          <div class="steps">Steps:</div>
+          <div class="d-flex">
+            <div>
+              <label for="a_q5">Please enter <b>A</b> Value </label>
+              <input type="number" id="a_q5" class="" />
+            </div>
+            <div>
+              <label for="b_q5">Please enter <b>B</b> value </label>
+              <input type="number" id="b_q5" class="" />
+            </div>
+          </div>
+          <button onclick="solve8()">Check value</button>
+          <p id="result8" class="bg-success-soft"></p>
+        </article>
+      </section>
+
+    <!-- Question 6 -->
+    <section width="75%">
+      <img src="images/img-6.jpg" alt="Question6" width="75%" />
+      <article>
+        <div class="steps">Steps:</div>
+        <div class="d-flex">
+          <div class="flex-1-1">
+            <label for="userName">Please enter your name </label>
+            <input type="text" id="userName" class="" />
+          </div>
+          <div class="flex-1-1">
+            <label for="grade">Please enter your grade </label>
+            <input type="number" id="grade" min="0" max="100" class="" />
+          </div>
+        </div>
+
+        <button onclick="solve9()">Check Grade</button>
+        <p id="result9" class="bg-success-soft"></p>
+      </article>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
